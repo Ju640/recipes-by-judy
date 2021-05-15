@@ -2,14 +2,15 @@ import "./App.css";
 
 import React from "react";
 
-function App() {
+export default function App() {
+  App.preventDefault();
   return (
     <div className="App">
       <div className="container">
         <div className="websiteName">Recipes by Judy</div>
         <div className="row align-items-center">
           <div className="col">
-            <a href="favorites.js">favorites</a>
+            <a href="/favorites.html">Favorites</a>
           </div>
           <div className="col">Beef</div>
           <div className="col">Chicken</div>
@@ -31,5 +32,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
